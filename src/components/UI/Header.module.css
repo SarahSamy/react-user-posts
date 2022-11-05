@@ -1,0 +1,9 @@
+.container {
+    background-color: black;
+    text-align: center;
+    color: var(--light-brown-2-color);
+    padding: var(--lg-padding);
+    margin-bottom: var(--sm-margin);
+    width: 100%;
+    font-family: var(--main-font-san-serif);
+}

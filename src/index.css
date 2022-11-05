@@ -1,13 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'Ubuntu', 'Sofia', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  background-color:var(--primary-brown-color);
+  /* colors */
+  --primary-brown-color: #a06c29;
+  --light-brown-color:#edeeae;
+  --light-brown-1-color:#c2a177;
+  --light-brown-2-color:bisque;
+  --light-brown-3-color:#fdeeda;
+  --yellow-color:#fdd96a;
+  --dark-yellow-color:#eec377;
+  --white-color:rgb(255, 255, 255);
+  --dark-white-color:rgb(207, 203, 203);
+  --dark-shadow-color:rgba(0, 0, 0, 0.2);
+  --light-shadow-color: rgb(200 181 123 / 90%);
+  --dark-black-color:black;
+  --light-black-color: rgba(46, 31, 2, 0.721);
+  --dark-grey-color:#383636;
+  /* margin */
+  --sm-margin:0.5rem;
+  --md-margin:1rem;
+  --lg-margin:3rem;
+  /* padding */
+  --sm-padding:0.5rem;
+  --md-padding:1rem;
+  --lg-padding:1.5rem;
+  /* width */
+  --sm-width:55%;
+  --md-width:70%;
+  --lg-width:24rem;
+  --lg-img-width:24rem;
+  /* tooltip */
+  --tooltip-padding:3px;
+  --tooltip-top-position:8px;
+  --tooltip-right-position:37px;
+  --tooltip-border-rd:6px;
+  /* border radius */
+  --sm-border-rd:0.5rem;
+  --lg-border-rd:2rem;
+  /* icon */
+  --sm-icon-padding:0.01rem;
+  --lg-icon-padding: 0.1rem;
+  --sm-icon-dimensions:1rem;
+  --lg-icon-dimensions: 2rem;
+  --sm-icon-img-size:10px;
+  --lg-icon-img-size: 20px;
+  /* card */
+  --main-card-width:18rem;
+  /* font */
+  --sm-font-size:13px;
+  --md-font-size:0.9rem;
+  --lg-font-size:1.6rem;
+  --main-font-san-serif:"Sofia", sans-serif;
+  --secondary-font-san-serif:'Ubuntu', sans-serif;
+  /* duration */
+  --sm-duration:0.7s;
+
 }

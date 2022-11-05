@@ -1,0 +1,38 @@
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem auto;
+    width: var(--md-width);
+   
+}
+
+.card>img {
+    width: var(--lg-img-width);
+    position: relative;
+    animation-name: movement;
+    animation-duration: var(--sm-duration);
+    animation-iteration-count: infinite;
+}
+
+.card__msg {
+    margin-top: var(--sm-margin);
+    font-family: var(--main-font-san-serif);
+    color: var(--dark-yellow-color);
+    font-size: var(--lg-font-size);
+}
+
+.card__action{
+padding:var(--sm-padding);
+background-color: var(--dark-black-color);
+color: var(--light-brown-2-color);
+border-radius: var(--sm-border-rd);
+border: none;
+}
+
+@keyframes movement {
+    50% {
+        bottom: 20px;
+    }
+}

@@ -1,10 +1,10 @@
+import { Link } from "react-router-dom";
 import email from '../../assets/images/envelope.svg';
 import username from '../../assets/images/user.svg';
 import website from '../../assets/images/globe.svg'
 import phone from '../../assets/images/phone-call.svg'
 import home from '../../assets/images/home.svg'
 import company from '../../assets/images/building.svg';
-import { Link } from "react-router-dom";
 import styles from './Card.module.css';
 
 const Card = ({ user }) => {
@@ -59,7 +59,7 @@ const Card = ({ user }) => {
                         <span className={styles['card__icons-tooltiptext']} >Website</span>
                     </div>
                     <div className={styles['card__text']}>
-                        <a href={`//${user.website}`} target='_blank'>{user.website}</a>
+                        <a href={`//${user.website}`} target='_blank' rel='noreferrer'>{user.website}</a>
                     </div>
                 </div>
             </div>

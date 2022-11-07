@@ -1,15 +1,13 @@
+import { useEffect } from 'react';
 import { useInfiniteQuery } from '@tanstack/react-query';
-import Users from '../components/Users';
-import { getUsers } from '../Api/usersApi';
+import { getUsers } from '../api/usersApi';
+import useInView from '../hooks/useInView';
+import Users from '../components/features/Users';
 import LoadMore from '../components/UI/LoadMore';
 import Loading from '../components/UI/Loading';
-import Error from '../components/UI/Error';
-import fetchErrorImg from '../assets/images/error.png';
-import useInView from '../hooks/useInView';
-import { useEffect } from 'react';
+import FetchingError from '../components/UI/FetchingError';
 
 const UsersPage = () => {
-
     const pageLimit = 6;
     const [inView, setRef] = useInView();
     const {
@@ -39,7 +37,7 @@ const UsersPage = () => {
             fetchNextPage();
         }
 
-    }, [inView, isFetchingNextPage])
+    }, [inView, hasNextPage, isFetchingNextPage, fetchNextPage])
 
     if (status === 'loading') {
         return (
@@ -49,21 +47,13 @@ const UsersPage = () => {
 
     if (error) {
         return (
-            <Error
-                img={fetchErrorImg}
-                msg={"Something went wrong"}
-                action={{
-                    func: () => { window.location.reload() },
-                    message: "Try again"
-                }
-                }
-            />
+            <FetchingError />
         )
     }
     return (
         <>
             <Users users={data.pages.flat()} />
-            <LoadMore setRef={setRef}/>
+            <LoadMore setRef={setRef} />
         </>
 
 

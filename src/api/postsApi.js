@@ -6,11 +6,7 @@ export const getPosts = (userId, pageParam, limit) => axios.get(`https://jsonpla
             userId,
             _page: pageParam,
             _limit: limit
-        }
+        },
+        timeout: 5000
     })
-    .then(res => {
-        return res.data
-    })
-    .catch(err => {
-        throw err
-    })
+    .then(res => res.data)

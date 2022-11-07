@@ -7,23 +7,22 @@ const useInView = () => {
 
     const handleObserver = (entries) => {
         const [target] = entries
-        
         if (target.isIntersecting) {
             setInView(true);
         }
-        else{
+        else {
             setInView(false);
         }
     }
 
     useEffect(() => {
-        if(!ref) return;
+        if (!ref) return;
         const observer = new IntersectionObserver(handleObserver);
         observer.observe(ref);
         return () => observer.unobserve(ref);
 
     }, [ref])
 
-    return [inView,setRef]
+    return [inView, setRef]
 }
 export default useInView;

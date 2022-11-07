@@ -4,8 +4,8 @@
     flex-direction: column;
     align-items: center;
     margin: 5rem auto;
-    width: var(--md-width);
-   
+    width: var(--md-res-width);
+
 }
 
 .card>img {
@@ -23,12 +23,13 @@
     font-size: var(--lg-font-size);
 }
 
-.card__action{
-padding:var(--sm-padding);
-background-color: var(--dark-black-color);
-color: var(--light-brown-2-color);
-border-radius: var(--sm-border-rd);
-border: none;
+.card__action {
+    padding: var(--sm-padding);
+    background-color: var(--dark-black-color);
+    color: var(--light-brown-2-color);
+    border-radius: var(--sm-border-rd);
+    border: none;
+    cursor: pointer;
 }
 
 @keyframes movement {

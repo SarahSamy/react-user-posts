@@ -36,10 +36,12 @@ body {
   --md-padding:1rem;
   --lg-padding:1.5rem;
   /* width */
-  --sm-width:55%;
-  --md-width:70%;
+  --sm-res-width:60%;
+  --md-res-width:70%;
+  --lg-res-width:80%;
+  --sm-width:2rem;
   --lg-width:24rem;
-  --lg-img-width:24rem;
+  --lg-img-width:20rem;
   /* tooltip */
   --tooltip-padding:3px;
   --tooltip-top-position:8px;

@@ -40,4 +40,7 @@
     .header__title {
         flex-basis: 50%;
     }
+    .logo__name {
+        font-size: 0.9rem;
+    }
 }

@@ -61,6 +61,7 @@
 
 .card__icons:hover .card__icons-tooltiptext {
   visibility: visible;
+
 }
 
 .card__icons>img {
@@ -79,6 +80,7 @@
   padding: var(--tooltip-padding);
   top: var(--tooltip-top-position);
   right: var(--tooltip-right-position);
+  font-size: 0.6rem;
   z-index: 1;
 }
 
@@ -123,3 +125,4 @@ a:link {
 .card__text>a {
   color: var(--primary-brown-color);
 }
+
